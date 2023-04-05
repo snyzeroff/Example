@@ -2,7 +2,7 @@
 #### *it's an automated Reddit comment bot that draws its answers from the GPT-3 API*
   - Pick a subreddit to scan
   - Set your bot's reply with keywords
-  - Set the response of GPT–3 and define the invitation to go to *Starton*.
+  - Set the response of GPT–3 and define the invitation to go to *example.com*.
  
 ## 📋・Requirements
   - [Python](https://www.python.org/downloads/)
@@ -11,13 +11,13 @@
 ## 🚀・Setup
 Clone the repository to your local machine:
 ```sh-session
-git clone https://github.com/snyzeroff/Redditbot.git
+git clone https://github.com/snyzeroff/Redditbot2.git
 ```
 ```sh-session
 > Add your information in the .env file
 > Pick a subreddit to scan
 > Set your bot's reply with keywords in the file seleted_keywords.txt
-> Define the response of GPT–3 and set the invitation to go to *Starton*.
+> Define the response of GPT–3 and set the invitation to go to example.com.
 > run main.py
 ```
 
@@ -37,10 +37,10 @@ git clone https://github.com/snyzeroff/Redditbot.git
 ```python
 r.subreddit('web3')
 ```
-- Set the response of GPT–3 + set invitation to go to the *Starton* (in hypertext) website and adds 2 other decoys
+- Set the response of GPT–3 + set invitation to go to the *example.com* (in hypertext) website and adds 2 other decoys
 ``` python
-reply_text = response.choices[0].text.format("[starton.io](https://starton.io/)")
-reply_text += " Je t'invite à essayer un des templates de [Starton]({}).".format("[starton.io](https://starton.io/)")
+reply_text = response.choices[0].text.format("[example.com](https://example.com/)")
+reply_text += " Je t'invite à essayer un des templates de [example]({}).".format("[example.com](https://example.com/)")
 comment.reply(reply_text)
 ```
 - Prints that he has found a message to which he has replied
@@ -90,8 +90,6 @@ To avoid replying to the same comment multiple times, the script stores the IDs 
 
 The script waits for 10 seconds between each loop iteration to prevent the bot from overwhelming the Reddit API with requests.
 
-#### *Fabien, Jérome (or the Starton team) if you have any questions do not hesitate to contact me*
-
 ## 💭・ChangeLog
 
 ```diff
@@ -119,6 +117,5 @@ v0.0.1 ⋮ 25-02-2023
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paul-ehm-3bb478266/)
 [![discord](https://img.shields.io/badge/Discord-4169E1?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/691571567863398430)
 
-
 -----
-[![starton](https://i.imgur.com/c4O6h1Q.png)](https://www.starton.io/)
+[![example.com](https://cdn-icons-png.flaticon.com/512/5307/5307812.png)](https://example.com/)
