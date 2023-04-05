@@ -24,8 +24,8 @@ for comment in subreddit.stream.comments(skip_existing=True):
         response = openai.Completion.create(engine="text-davinci-002",
                                             prompt=comment.body,
                                             max_tokens=150)
-        reply_text = response.choices[0].text.format("[starton.io](https://starton.io/)")
-        reply_text += " if you want to explore the subject further, I invite you to try one of the templates of [Starton]({}), or a template of Thirdweb.".format("[starton.io](https://starton.io/)")
+        reply_text = response.choices[0].text.format("[example.com](https://example.com/)")
+        reply_text += " Je t'invite à essayer un des templates de [example]({}).".format("[example.com](https://example.com/)")
         comment.reply(reply_text)
         print("Réponse envoyée pour le commentaire {}.".format(comment.id))
         time.sleep(10)
