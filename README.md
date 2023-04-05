@@ -2,7 +2,7 @@
 #### *it's an automated Reddit comment bot that draws its answers from the GPT-3 API*
   - Pick a subreddit to scan
   - Set your bot's reply with keywords
-  - Set the response of GPT–3 and define the invitation to go to *example.com*.
+  - Set the response of GPT–3 and define the invitation to go to **example.com**.
  
 ## 📋・Requirements
   - [Python](https://www.python.org/downloads/)
