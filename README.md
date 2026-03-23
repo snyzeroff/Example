@@ -109,7 +109,7 @@ v0.0.1 ⋮ 25-02-2023
 ```
 
 # Author
-# [Hi, I'm Paul-Emile Heim! 👋](https://github.com/snyzeroff)
+# [Hi, I'm Paulehm! 👋](https://github.com/snyzeroff)
 
 [<img src="https://i.imgur.com/OL5xQWZ.png" width="317" height="317">](https://discord.com/users/1074612809326936094)
 ## 🔗・Links
